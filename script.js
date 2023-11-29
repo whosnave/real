@@ -322,4 +322,4 @@ let confirm1 = prompt("Did you win? (yes/no)")
 if ( confirm1.toUpperCase() == "YES" ) {
   document.write("U bussin my Theory U Win let's Play Again!")
 } else 
-  document.write("Pake Khufra aja NGENTOTT")
+  document.write("Tutorial pakai khufra?")
