@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0; /* Fixing the typo here */
+    padding: 0;
     box-sizing: border-box;
   }
   
@@ -11,12 +11,12 @@
     min-height: 100vh;
     background: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0; /* Adding this to remove default body margin */
+    margin: 0; 
   }
   
   .gif {
     width: 100%;
-    height: auto; /* Making the height auto to maintain aspect ratio */
+    height: auto; 
   }
   
   h2 {
@@ -35,6 +35,7 @@
   }
   
   button {
+    position: absolute;
     width: 150px;
     height: inherit;
     color: white;
@@ -43,7 +44,9 @@
     outline: none;
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
     font-size: 1.2em;
+    transition: left 0.5s, top 0.5s; 
   }
   
   button:nth-child(1) {
