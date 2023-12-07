@@ -9,7 +9,7 @@ yesBtn.addEventListener("click", () => {
   gif.src = "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
 });
 
-noBtn.addEventListener("mouseover", () => {
+noBtn.addEventListener("click", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
   const maxY = window.innerHeight - noBtnRect.height;
@@ -17,6 +17,12 @@ noBtn.addEventListener("mouseover", () => {
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
+  noBtn.style.transition = "left 0.5s, top 0.5s";
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
+});
+
+// Reset transition property after the transition ends
+noBtn.addEventListener("transitionend", () => {
+  noBtn.style.transition = "";
 });
