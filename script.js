@@ -22,7 +22,6 @@ noBtn.addEventListener("click", () => {
   noBtn.style.top = randomY + "px";
 });
 
-// Reset transition property after the transition ends
 noBtn.addEventListener("transitionend", () => {
   noBtn.style.transition = "";
 });
